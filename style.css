@@ -390,6 +390,10 @@ input[type="checkbox"]{
 footer {
     background-color: #78A6C8;
     margin: 0;
+    color: white;
+}
+body{
+    margin: 0;
 }
 #order{
     width:70%
