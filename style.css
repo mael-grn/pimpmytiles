@@ -17,14 +17,36 @@ body{
 nav {
     display: flex;
     justify-content: space-between;
-
     border-bottom: 2px solid #E65C4F;
     margin: 5px 50px;
     padding: 40px 100px;
 }
 
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    font-size: 30px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.backToTop:hover {
+    transform: scale(1.1) rotate(-90deg);
+}
 nav img {
     width: 50px;
+
 }
 
 
@@ -343,7 +365,7 @@ input[type="checkbox"]{
     justify-self: right;
 }
 
-#formbalise input:not(#envoyez) {
+#formbalise input:not(#envoyez, #picture) {
     padding: 10px 20px;
     border: none;
     border-bottom: 2px solid #E65C4F;
@@ -360,7 +382,7 @@ input[type="checkbox"]{
     padding: 20px;
     border: 2px solid #E65C4F;
 }
-#formbalise .picture input {
+#formbalise .picture input:not(#picture) {
     width: 500px;
     background-color: white;
 }
@@ -415,4 +437,11 @@ textarea{
 }
 select{
     width:40%
+}
+#picture {
+    padding: 10px 20px;
+    border: 2px solid #E65C4F;
+    border-radius: 20px;
+    width: 300px;
+    transition: all .2s ease;
 }
